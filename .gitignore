@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+*_work/
+*_compare/
+ref/
+out/
+*.mp4
+*.mov
+*.mkv
+!examples/**

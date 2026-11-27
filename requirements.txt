@@ -1,0 +1,5 @@
+Pillow>=9.2
+# optional: word-level captions and word-accurate cuts
+openai-whisper
+# optional: analyse references straight from a link
+yt-dlp

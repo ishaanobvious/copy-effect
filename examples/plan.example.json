@@ -1,0 +1,27 @@
+{
+  "source": ["raw/take1.mov", "raw/take2.mov"],
+  "reference": "ref/style_dna.json",
+  "output": "out/my-reel.mp4",
+
+  "format": {"width": 1080, "height": 1920, "fps": 30, "fit": "crop", "anchor": [0.5, 0.38]},
+  "cut": {"mode": "auto", "min_pause": 0.25, "keep_pause": 0.06, "remove": [[3.2, 5.9]]},
+  "shots": {"target_len": 1.8, "zooms": [1.0, 1.15]},
+  "speed": 1.05,
+  "grade": {"match_reference": true, "strength": 0.7},
+
+  "captions": {
+    "enabled": true, "font": "Montserrat:Black", "size": 76, "case": "upper", "strip_punct": true,
+    "color": "#FFFFFF", "highlight": "#FFE600", "highlight_mode": "color",
+    "stroke": "#000000", "stroke_width": 7, "shadow": true, "words_per_line": 2, "y": 0.64
+  },
+  "texts": [
+    {"text": "3 habits that\nchanged my mornings", "start": 0, "end": 2.6, "y": 0.2, "size": 84,
+     "font": "Anton", "case": "upper", "stroke_width": 0, "shadow": true}
+  ],
+  "overlays": [
+    {"file": "broll/sunrise.mp4", "start": 4.1, "end": 5.9, "mode": "full"},
+    {"file": "img/journal.jpg", "start": 9.0, "end": 11.0, "x": 0.5, "y": 0.27, "w": 0.72}
+  ],
+  "audio": {"music": "music/my-licensed-track.mp3", "music_db": -24, "duck": true},
+  "sfx": [{"file": "sfx/whoosh.wav", "at": 4.1, "db": -8}]
+}
